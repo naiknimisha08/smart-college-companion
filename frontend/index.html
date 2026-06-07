@@ -1,1 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart College Companion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <h1>Smart College Companion</h1>
+    </header>
+
+    <div class="container">
+
+        <!-- Login -->
+        <section class="card">
+            <h2>Login</h2>
+            <input type="text" placeholder="Username" id="username">
+            <input type="password" placeholder="Password" id="password">
+            <button onclick="login()">Login</button>
+        </section>
+
+        <!-- Dashboard -->
+        <section class="card">
+            <h2>Student Dashboard</h2>
+            <p>Name: Deeya Patil</p>
+            <p>Roll No: 101</p>
+            <p>Department: Computer Engineering</p>
+        </section>
+
+        <!-- Attendance -->
+        <section class="card">
+            <h2>Attendance</h2>
+            <p>Current Attendance: <span id="attendance">85%</span></p>
+        </section>
+
+        <!-- Notes -->
+        <section class="card">
+            <h2>Notes Sharing</h2>
+            <ul>
+                <li>DBMS Notes.pdf</li>
+                <li>CN Notes.pdf</li>
+                <li>Python Notes.pdf</li>
+            </ul>
+        </section>
+
+        <!-- Notice Board -->
+        <section class="card">
+            <h2>Notice Board</h2>
+            <ul>
+                <li>Semester Exam Form Released</li>
+                <li>Project Submission Deadline: 15 June</li>
+                <li>Workshop on AI - 10 June</li>
+            </ul>
+        </section>
+
+        <!-- Timetable -->
+        <section class="card">
+            <h2>Today's Timetable</h2>
+            <table>
+                <tr>
+                    <th>Time</th>
+                    <th>Subject</th>
+                </tr>
+                <tr>
+                    <td>9:00 AM</td>
+                    <td>DBMS</td>
+                </tr>
+                <tr>
+                    <td>11:00 AM</td>
+                    <td>Python</td>
+                </tr>
+                <tr>
+                    <td>2:00 PM</td>
+                    <td>Computer Networks</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Assignments -->
+        <section class="card">
+            <h2>Assignments</h2>
+            <ul id="assignmentList">
+                <li>IoT Assignment - Due 5 June</li>
+                <li>Python Mini Project - Due 8 June</li>
+            </ul>
+        </section>
+
+        <!-- Leave Application -->
+        <section class="card">
+            <h2>Leave Application</h2>
+
+            <textarea id="leaveReason"
+                placeholder="Enter reason for leave"></textarea>
+
+            <button onclick="applyLeave()">
+                Submit Leave
+            </button>
+
+            <p id="leaveMessage"></p>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
